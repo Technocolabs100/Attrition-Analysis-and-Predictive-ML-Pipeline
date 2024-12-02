@@ -140,7 +140,3 @@ We welcome contributions from the community! To contribute:
 ## 🔗 **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify this README template to fit your specific project needs! Let me know if you want additional customization.
