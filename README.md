@@ -1,7 +1,3 @@
-Here's a sample **GitHub README** for the **Employee Attrition Analysis and Prediction System** project:
-
----
-
 # Employee Attrition Analysis and Prediction System
 
 This repository contains the complete project files for **Employee Attrition Analysis and Prediction**, aimed at analyzing factors influencing employee attrition, predicting potential attrition, and providing actionable insights for HR teams to improve employee retention. This project integrates **Data Science**, **Machine Learning**, **Data Engineering**, **Data Analysis**, and **Business Intelligence Development**.
@@ -46,8 +42,6 @@ To identify key factors contributing to employee attrition, build predictive mod
 │   ├── visualizations/    # Scripts for generating plots
 ├── README.md              # Project overview and instructions
 ```
-
----
 
 ## 📊 **Business Intelligence Dashboards**
 
