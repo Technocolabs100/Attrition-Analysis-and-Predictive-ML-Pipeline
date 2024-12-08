@@ -1,4 +1,3 @@
-print("""
 # **Project: Attrition Analysis** 📊
 
 **Overview** 
