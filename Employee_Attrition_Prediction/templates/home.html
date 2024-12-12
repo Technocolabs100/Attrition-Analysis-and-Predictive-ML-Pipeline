@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attrition Prediction</title>
+</head>
+<body style="background-color: lightblue; font-family: Arial, sans-serif;">
+    <h1 style="text-align: center; color: darkblue;"> Predict the Attrition</h1>
+    <form action="/" method="post" style="background-color: white; padding: 30px; border-radius: 20px; max-width: 500px; margin: auto; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+        <label for="feature1"><b>MonthlyIncome:</b></label>
+        <input type="text" name="feature1" required ><br>
+        <label for="feature2"><b>StockOptionLevel (Yes=1, No=0):</b></label>
+        <input type="text" name="feature2" required><br>
+        <label for="feature3"><b>YearsWithCurrManager:</b></label>
+        <input type="text" name="feature3" required><br>
+        <label for="feature4"><b>OverTime_Yes (Yes=1, No=0):</b></label>
+        <input type="text" name="feature4" required><br>
+        <label for="feature5"><b>JobIncomeInteraction:</b></label>
+        <input type="text" name="feature5" required><br>
+        <button type="submit" style="background-color: darkblue; color: white; padding: 15px; width: 100%; border: none; border-radius: 5px; cursor: pointer;
+		font-family: 'Arial', sans-serif; 
+               font-size: 25px; 
+               font-weight: bold; 
+               text-transform: uppercase;">Predict</button>
+    </form>
+    {% if prediction_text %}
+    <h2 style="text-align: center; color: blue;">{{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>
