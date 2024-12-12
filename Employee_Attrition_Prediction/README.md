@@ -1,6 +1,6 @@
 
 
-In this section, we have used a simple RandomForestClassifier to diagnose the breast cancer.
+In this section, we have used a simple XGBOOSTclassifier to predict attrition.
 
 Creating the flask API
 
@@ -15,10 +15,10 @@ def loadPage():
 	return render_template('home.html', query="")
 ```
 
-The cancerPrediction method is our POST method, which is basically called when we pass all the inputs from our front end and click SUBMIT.
+The predict method is our POST method, which is basically called when we pass all the inputs from our front end and click SUBMIT.
 ```
 @app.route("/", methods=['POST'])
-def cancerPrediction():
+def predict():
 ```
   
 The run() method of Flask class runs the application on the local development server.
@@ -36,16 +36,7 @@ python app.py
 ```
 
 
-Below message in Python shell is seen, which indicates that our App is now hosted at http://127.0.0.1:5000/ or localhost:5000
+Below message in Python shell is seen, which indicates that our App is now hosted at http://127.0.0.1:5004/ or localhost:5004
 ```
 * Running on http://127.0.0.1:5004/ (Press CTRL+C to quit)
 ```
-
-
-HERE'S HOW OUR FRONTEND LOOKS LIKE:
-
-FOR DIAGNOSED, WE ARE ALSO SHOWING THE PROBABILITY/CONFIDENCE SCORE:
-![Diagnosed](https://github.com/beingdatum/BreastCancerPrediction/blob/master/Images/diag.PNG)
-
-FOR NON DIAGNOSED, WE SIMPLY RETURN THAT "THE PATIENT IS NOT DIAGNOSED BY BREAST CANCER"
-![Not Diagnosed](https://github.com/beingdatum/BreastCancerPrediction/blob/master/Images/notdiag.PNG)
